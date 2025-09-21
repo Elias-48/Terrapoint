@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Terrapoint</title>
+	<!-- page icon -->
+	<link rel="icon" type="image/png" href="img/icon.png" />
+
+	<!-- import from bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+		crossorigin="anonymous"></script>
+
+	<!-- import CSS -->
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+	<!-- NAVBAR -->
+	<header>
+		<nav class="navbar navbar-expand-lg">
+			<div class="container-xxl">
+				<!-- Logo + texto -->
+				<a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+					<img src="img/logo.png" alt="Logo Terrapoint" width="30" height="24"
+						class="d-inline-block align-text-top" />
+					<span class="fw-bold">TERRAPOINT</span>
+				</a>
+
+				<!-- Botón hamburguesa -->
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<!-- Enlaces -->
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<div class="navbar-nav ms-auto">
+						<a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+						<a class="nav-link" href="#mapa">Mapa</a>
+						<a class="nav-link" href="#datos">Datos</a>
+						<a class="nav-link" href="#comunidad">Comunidad</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<!-- HERO SECCIÓN -->
+	<main>
+		<section class="hero d-flex align-items-center text-center">
+			<div class="container">
+				<h1 class="hero-title">Monitoreo ambiental con datos satelitales</h1>
+				<p class="hero-subtitle">
+					Visualiza mapas en vivo de contaminación, calidad del aire y
+					ecosistemas gracias a datos de la NASA. Únete a la lucha por un
+					planeta sostenible con precisión basada en tecnología avanzada.
+				</p>
+				<div class="d-flex justify-content-center gap-3 mt-4">
+					<a href="#" class="btn btn-gradient btn-lg">Explorar mapa</a>
+					<a href="#" class="btn btn-orange btn-lg">Jugar gamificación</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<!-- MAPA SECCIÓN -->
+	<section id="mapa" class="map-section py-5">
+		<div class="container">
+			<div class="text-center mb-5">
+				<h2 class="map-title">Mapa Satelital Interactivo</h2>
+				<p class="map-subtitle">
+					Utilizando datos precisos de la NASA para mostrar zonas de alta
+					contaminación y áreas verdes en tiempo real.
+				</p>
+			</div>
+
+			<div class="row align-items-center">
+				<!-- Columna del mapa: primero en móviles, segundo en escritorio -->
+				<div class="col-lg-9 order-1 order-lg-2">
+					<div id="map" class="map-container">
+						<span class="map-placeholder">[ MAPA AQUÍ ]</span>
+					</div>
+				</div>
+				<!-- Columna de la imagen (astronauta): segundo en móviles, primero en escritorio -->
+				<div
+					class="col-lg-3 d-flex justify-content-center justify-content-lg-start mt-4 mt-lg-0 order-2 order-lg-1">
+					<img src="img/astronaut.png" alt="Astronauta NASA" class="side-image" />
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- SECCIÓN CALIDAD DEL AIRE -->
+	<section id="datos" class="air-quality py-5">
+		<div class="container text-center">
+			<div class="row g-4">
+				<!-- Card 1  -->
+				<div class="col-12 col-md-6 col-lg-3">
+					<div class="card air-card p-4">
+						<h3 class="mb-4">Calidad del Aire</h3>
+						<div class="circle mb-3">
+							<span>75%</span>
+						</div>
+						<h5>Buena</h5>
+						<p class="small">
+							Basado en PM2.5, NO2 y O3 <br />
+							(Datos simulados acorde a estándares de la EPA)
+						</p>
+						<p class="extra-text">
+							La calidad del aire es saludable para la población general.
+						</p>
+					</div>
+				</div>
+
+				<!-- Card 2 -->
+				<div class="col-12 col-md-6 col-lg-3">
+					<div class="card air-card p-4">
+						<h3 class="mb-4">contaminación</h3>
+						<div class="circle mb-3">
+							<span>40%</span>
+						</div>
+						<h5>Alta</h5>
+						<p class="small">
+							Alta - Niveles elevados de CO2 y <br />
+							partículas PM10.
+						</p>
+						<p class="extra-text">
+							Puede haber riesgos para personas sensibles.
+						</p>
+					</div>
+				</div>
+
+				<!-- Card 3 -->
+				<div class="col-12 col-md-6 col-lg-3">
+					<div class="card air-card p-4">
+						<h3 class="mb-4">Zonas verdes</h3>
+						<div class="circle mb-3">
+							<span>60%</span>
+						</div>
+						<h5>Saludable</h5>
+						<p class="small">
+							Saludables - Aumento en <br />
+							vegetación detectado por NDVI.
+						</p>
+						<p class="extra-text">
+							Recomendado limitar actividades al aire libre.
+						</p>
+					</div>
+				</div>
+
+				<!-- Card 4 -->
+				<div class="col-12 col-md-6 col-lg-3">
+					<div class="card air-card p-4">
+						<h3 class="mb-4">Temperatura global</h3>
+						<div class="circle mb-3">
+							<span>55%</span>
+						</div>
+						<h5>Aumentando</h5>
+						<p class="small">
+							Aumentando - Comparado con <br />
+							1970s (Anomalía térmica).
+						</p>
+						<p class="extra-text">
+							La exposición prolongada puede ser peligrosa.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+
+<!-- =======================
+    SECCIÓN COMENTARIOS
+======================= -->
+<section id="comunidad" class="community-comments py-5">
+	<div class="container text-center">
+		<h2 class="section-title">Comentarios de la Comunidad</h2>
+		<p class="section-subtitle">
+			Escucha cómo EcoStellar está cambiando vidas con datos precisos y
+			acciones reales.
+		</p>
+
+		<div class="row mt-4">
+			<!-- Card 1 -->
+			<div class="col-md-6 col-lg-4 mb-4">
+				<div class="card comment-card p-4 h-100 shadow">
+					<div class="quote-mark">“</div>
+					<p class="comment-text">
+						Terrapoint me ayudó a entender la contaminación en mi ciudad. ¡He
+						reducido mi huella ecológica gracias a sus datos precisos de la
+						NASA!
+					</p>
+					<p class="comment-author">- Ana L., Ciudadana, Madrid</p>
+				</div>
+			</div>
+
+			<!-- Card 2 -->
+			<div class="col-md-6 col-lg-4 mb-4">
+				<div class="card comment-card p-4 h-100 shadow">
+					<div class="quote-mark">“</div>
+					<p class="comment-text">
+						Participando en la gamificación, mi comunidad plantó 500 árboles.
+						Los mapas satelitales nos guiaron perfectamente.
+					</p>
+					<p class="comment-author">- Juan P., Activista, Bogotá</p>
+				</div>
+			</div>
+
+			<!-- Card 3 -->
+			<div class="col-md-6 col-lg-4 mb-4">
+				<div class="card comment-card p-4 h-100 shadow">
+					<div class="quote-mark">“</div>
+					<p class="comment-text">
+						La precisión con datos satelitales de la NASA es asombrosa.
+						Terrapoint es mi aliada en sostenibilidad, con métricas reales.
+					</p>
+					<p class="comment-author">- Maria S., Científica, Santiago</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- =======================
+    SECCIÓN RECURSOS AMBIENTALES
+======================= -->
+<section class="environment-resources py-5">
+	<div class="container text-center">
+		<h2 class="section-title">Recursos Ambientales</h2>
+		<p class="section-subtitle">
+			Aprende más sobre el medio ambiente con artículos precisos basados en
+			ciencia.
+		</p>
+
+		<div class="row mt-4">
+			<!-- Card 1 -->
+			<div class="col-md-6 col-lg-4 mb-4">
+				<div class="card env-card h-100 shadow">
+					<img src="img/cambio climático.png" class="card-img-top" alt="Cambio Climático" />
+					<div class="card-body">
+						<h5 class="card-title">Cambio Climático</h5>
+						<p class="card-text">
+							Descubre los impactos del cambio climático en los ecosistemas,
+							con datos de temperatura global.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Card 2 -->
+			<div class="col-md-6 col-lg-4 mb-4">
+				<div class="card env-card h-100 shadow">
+					<img src="img/Clidad de aire.png" class="card-img-top" alt="Calidad del Aire" />
+					<div class="card-body">
+						<h5 class="card-title">Calidad del Aire</h5>
+						<p class="card-text">
+							Monitorea partículas PM2.5 y gases tóxicos con índices precisos
+							como AQI.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Card 3 -->
+			<div class="col-md-6 col-lg-4 mb-4">
+				<div class="card env-card h-100 shadow">
+					<img src="img/protección de ecosistemas.png" class="card-img-top" alt="Protección de Ecosistemas" />
+					<div class="card-body">
+						<h5 class="card-title">Protección de Ecosistemas</h5>
+						<p class="card-text">
+							Estrategias para preservar biodiversidad y zonas verdes mediante
+							datos satelitales.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="gamification-section">
+	<div class="container">
+		<h2 class="section-title">Gamificación y Recompensas</h2>
+		<p class="section-subtitle">
+			Gana puntos limpiando zonas contaminadas, formando comunidades y
+			completando retos ecológicos. ¡Cada acción cuenta con precisión!
+		</p>
+
+		<div class="row g-4">
+			<!-- Card 1 -->
+			<div class="col-md-4">
+				<div class="gamification-card">
+					<img src="img/1.png" alt="Acciones Ecológicas" />
+					<h5 class="card-title">Acciones Ecológicas</h5>
+					<p class="card-text">
+						Registra limpiezas y plantaciones para puntos basados en impacto
+						real.
+					</p>
+				</div>
+			</div>
+
+			<!-- Card 2 -->
+			<div class="col-md-4">
+				<div class="gamification-card">
+					<img src="img/2.png" alt="Comunidades" />
+					<h5 class="card-title">Comunidades</h5>
+					<p class="card-text">
+						Únete o crea grupos para desafíos colaborativos con métricas
+						precisas.
+					</p>
+				</div>
+			</div>
+
+			<!-- Card 3 -->
+			<div class="col-md-4">
+				<div class="gamification-card">
+					<img src="img/1.png" alt="Certificados" />
+					<h5 class="card-title">Certificados</h5>
+					<p class="card-text">
+						Obtén credenciales digitales por logros validados por datos
+						satelitales.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer-section text-center">
+	<div class="container-fluid">
+		<div class="row align-items-center">
+
+			<!-- Columna izquierda: Imagen -->
+			<div class="col-lg-3 text-center mb-4 mb-lg-0">
+				<img src="img/footer.png" alt="Astronauta" class="footer-img">
+			</div>
+
+			<!-- Columna central: Formulario -->
+			<div class="col-lg-6 mb-4 mb-lg-0">
+				<h3 class="footer-form-title">Contacta con Terrapoint</h3>
+				<form class="footer-form">
+					<div class="mb-3">
+						<input type="text" class="form-control" placeholder="Tu nombre" required>
+					</div>
+					<div class="mb-3">
+						<input type="email" class="form-control" placeholder="Tu email" required>
+					</div>
+					<div class="mb-3">
+						<textarea class="form-control" rows="4" placeholder="Tu mensaje" required></textarea>
+					</div>
+					<button type="submit" class="btn btn-footer">Enviar</button>
+				</form>
+
+				<!-- Redes sociales -->
+				<div class="footer-social mt-4">
+					<a href="#">FB</a>
+					<a href="#">TW</a>
+					<a href="#">IG</a>
+					<a href="#">LI</a>
+				</div>
+			</div>
+
+			<!-- Columna derecha: Texto CTA -->
+			<div class="col-lg-3 text-center">
+				<h3 class="footer-cta">Vuélvete un aliado<br>ambiental...</h3>
+			</div>
+		</div>
+
+		<!-- Créditos -->
+		<div class="footer-bottom mt-5">
+			<p>© 2025 Terrapoint — Salvemos el planeta con datos precisos.</p>
+		</div>
+	</div>
+</footer>
+</html>

@@ -1,0 +1,625 @@
+/* =======================
+  TAMAÑOS RESPONSIVOS
+   ======================= */
+
+/* Tamaño base (móviles) */
+.navbar-brand {
+  font-size: 1rem; /* ~16px */
+}
+
+.navbar-nav .nav-link {
+  font-size: 0.9rem; /* ~14px */
+}
+
+/* Tablets y laptops */
+@media (min-width: 992px) {
+  .navbar-brand {
+    font-size: 1.3rem; /* ~21px */
+  }
+  .navbar-nav .nav-link {
+    font-size: 1.1rem; /* ~18px */
+  }
+}
+
+/* Monitores grandes */
+@media (min-width: 1400px) {
+  .navbar-brand {
+    font-size: 1.6rem; /* ~25px */
+  }
+  .navbar-nav .nav-link {
+    font-size: 1.3rem; /* ~20px */
+  }
+}
+
+/* =======================
+  COLORES + ESTILO NAVBAR
+   ======================= */
+
+/* Fondo degradado y altura */
+.navbar {
+  background: linear-gradient(93.09deg, #2ECC71 0%, #3498DB 50%, #27AE60 100%);
+  padding-top: 1rem;   /* espacio arriba */
+  padding-bottom: 1rem; /* espacio abajo */
+}
+
+/* Marca (logo + nombre) */
+.navbar-brand {
+  color: white !important;
+  font-weight: bold;
+}
+
+/* Enlaces */
+.navbar-nav .nav-link {
+  color: white !important;
+  transition: color 0.3s ease;
+  padding: 0.8rem 1rem;  /* más espacio alrededor */
+}
+
+/* Hover enlaces */
+.navbar-nav .nav-link:hover {
+  color: #f1c40f !important; /* amarillo */
+}
+
+/* =======================
+  HERO SECTION
+   ======================= */
+.hero {
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(104.82deg, #3498DB 0%, #2ECC71 100%);
+  color: #fff;
+  padding: 2rem;
+}
+
+.hero-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  max-width: 800px;
+  line-height: 1.6;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Ajustes para pantallas grandes */
+@media (min-width: 992px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+  .hero-subtitle {
+    font-size: 1.4rem;
+  }
+}
+
+/* =======================
+  BOTONES
+   ======================= */
+.btn {
+  border: none;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  margin: 0.5rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  color: #fff !important; /* siempre blanco */
+}
+
+.btn:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+  color: #fff !important;
+}
+
+/* Botón A con degradado */
+.btn-gradient {
+  background: linear-gradient(103.55deg, #27AE60 0%, #2ECC71 100%) !important;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(103.55deg, #219150 0%, #27AE60 100%) !important; /* un poco más oscuro */
+}
+
+/* Botón B en naranja */
+.btn-orange {
+  background: #F39C12 !important;
+}
+
+.btn-orange:hover {
+  background: #d68910 !important; /* un tono más oscuro */
+}
+
+/* =======================
+  MAPA SECCIÓN
+   ======================= */
+.map-section {
+  background: #f8f9fa;
+  color: #2c3e50;
+}
+
+.map-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.map-subtitle {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+  line-height: 1.6;
+  color: #555;
+}
+
+.map-container {
+  width: 100%;
+  height: 450px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #ddd; /* gris de prueba */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex; /* centrar texto */
+  align-items: center;
+  justify-content: center;
+}
+
+.map-placeholder {
+  font-size: 1.5rem;
+  color: #555;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+@media (min-width: 992px) {
+  .map-title {
+    font-size: 2.5rem;
+  }
+  .map-subtitle {
+    font-size: 1.2rem;
+  }
+  .map-container {
+    height: 600px;
+  }
+}
+
+
+/* =======================
+  MAPA SECCIÓN
+   ======================= */
+.map-section {
+  background: #f8f9fa;
+  color: #2c3e50;
+}
+
+.map-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.map-subtitle {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+  line-height: 1.6;
+  color: #555;
+}
+
+.map-container {
+  width: 100%;
+  height: 450px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #ddd; /* gris de prueba */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.map-placeholder {
+  font-size: 1.5rem;
+  color: #555;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+/* Imagen astronauta */
+.side-image {
+  width: 261px;
+  height: 362px;
+  opacity: 1;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+@media (min-width: 992px) {
+  .map-title {
+    font-size: 2.5rem;
+  }
+  .map-subtitle {
+    font-size: 1.2rem;
+  }
+  .map-container {
+    height: 600px;
+  }
+}
+
+/* =======================
+  CALIDAD DEL AIRE CARDS
+   ======================= */
+.air-quality {
+  background: #f4f6f9;
+  padding: 4rem 0;
+}
+
+.air-quality h2 {
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+}
+
+/* Card estilo */
+.air-card {
+  border: none;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  text-align: center;
+  height: 100%;
+}
+
+.air-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.15);
+}
+
+/* Círculo blanco */
+.air-card .circle {
+  width: 120px;
+  height: 120px;
+  margin: 1rem auto;
+  border-radius: 50%;
+  background: #fff;
+  border: 5px solid #2ECC71;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: #27AE60;
+}
+
+/* Títulos dentro de la card */
+.air-card h5 {
+  font-weight: 600;
+  margin-top: 0.5rem;
+  color: #2c3e50;
+  font-size: 1.2rem;
+}
+
+/* Texto de descripción */
+.air-card p.small {
+  margin: 0.8rem 0;
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Texto extra */
+.air-card .extra-text {
+  font-size: 0.85rem;
+  color: #7f8c8d;
+  margin-top: 0.5rem;
+}
+
+/* =======================
+  SECCIÓN COMENTARIOS
+======================= */
+.community-comments {
+  background: #eef7f6; /* fondo suave */
+  padding: 6rem 0 5rem 0; /* más espacio arriba y abajo */
+}
+
+.community-comments .section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #222;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.community-comments .section-subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 750px;
+  margin: 0 auto 3.5rem auto;
+  line-height: 1.7;
+  text-align: center;
+}
+
+/* Cards */
+.comment-card {
+  position: relative;
+  border: none;
+  border-radius: 15px;
+  background: linear-gradient(145deg, #ffffff, #f0f9f8);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 2rem 1.5rem;
+  min-height: 280px; /* más altura */
+  margin-bottom: 2rem;
+}
+
+.comment-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* Comillas grandes al inicio */
+.quote-mark {
+  font-size: 3rem;
+  color: #27ae60;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  line-height: 1;
+}
+
+/* Texto del comentario */
+.comment-text {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-top: 1.5rem; /* separa de las comillas */
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+/* Autor del comentario */
+.comment-author {
+  font-weight: bold;
+  color: #2c3e50;
+  font-size: 0.95rem;
+  text-align: left;
+}
+
+
+/* =======================
+  SECCIÓN RECURSOS AMBIENTALES - MÁS ESPACIO
+======================= */
+.environment-resources {
+  background: #f9f9f9; /* fondo neutro */
+  padding: 8rem 0 6rem 0; /* más espacio arriba y abajo */
+}
+
+.environment-resources .section-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #222;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.environment-resources .section-subtitle {
+  font-size: 1.15rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto 4rem auto; /* más espacio entre subtítulo y cards */
+  line-height: 1.7;
+  text-align: center;
+}
+
+/* Cards */
+.env-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  min-height: 350px; /* más altura */
+  margin-bottom: 2rem; /* espacio vertical entre cards en móvil */
+}
+
+/* Degradados diferentes para cada card */
+.env-card:nth-child(1) {
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+}
+.env-card:nth-child(2) {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+.env-card:nth-child(3) {
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+}
+
+/* Hover */
+.env-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.25);
+}
+
+/* Imagen de la card */
+.env-card .card-img-top {
+  height: 200px; /* más grande */
+  object-fit: cover;
+  filter: brightness(0.85);
+}
+
+/* Título */
+.env-card .card-title {
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* Texto */
+.env-card .card-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Card body padding */
+.env-card .card-body {
+  padding: 1.5rem 0.5rem;
+}
+
+/* =======================
+  SECCIÓN GAMIFICACIÓN Y RECOMPENSAS
+======================= */
+.gamification-section {
+  background: #f0f8ff; /* fondo suave azul claro */
+  padding: 8rem 0 6rem 0; /* más espacio vertical */
+}
+
+.gamification-section .section-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.gamification-section .section-subtitle {
+  font-size: 1.15rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto 4rem auto;
+  line-height: 1.8;
+  text-align: center;
+}
+
+/* Cards */
+.gamification-card {
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #6dd5ed, #2193b0); /* degradado moderno */
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  padding: 2.5rem 1.5rem;
+  min-height: 340px; /* altura consistente */
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.gamification-card:hover {
+  transform: translateY(-10px) rotate(-1deg);
+  box-shadow: 0 20px 35px rgba(0,0,0,0.2);
+}
+
+/* Imagen dentro de la card */
+.gamification-card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 1.5rem;
+  filter: brightness(0.9);
+  transition: transform 0.4s ease;
+}
+
+.gamification-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Título de la card */
+.gamification-card .card-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+}
+
+/* Texto de la card */
+.gamification-card .card-text {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #f0f8ff;
+  flex-grow: 1; /* para que el texto ocupe el espacio restante */
+}
+
+/* =======================
+  FOOTER
+======================= */
+.footer-section {
+  background: linear-gradient(106.7deg, #2C3E50 0%, #34495E 100%);
+  color: #fff;
+  padding: 4rem 2rem;
+}
+
+.footer-img {
+  max-width: 250px;
+  height: auto;
+}
+
+.footer-form-title {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.footer-form {
+  max-width: 600px;   /* más reducido */
+  margin: 0 auto;
+}
+
+.footer-form .form-control {
+  border-radius: 10px;
+  border: none;
+  padding: 0.75rem;
+}
+
+.btn-footer {
+  background: #27AE60;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 0.75rem 2rem;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.btn-footer:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+.footer-social a {
+  color: #f1c40f;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  font-weight: bold;
+}
+
+.footer-social a:hover {
+  color: #2ecc71;
+}
+
+.footer-cta {
+  color: #fff;
+  font-family: 'Signika SC', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.footer-bottom {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #bdc3c7;
+}
